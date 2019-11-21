@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <cstring>
+#include <string>
 #include "vec.h"
 
 using namespace std;
@@ -63,5 +63,12 @@ int main()
 	ss<<(tmp);
 	ss>>v3;
 	v3.print();
+	
+	// other test
+	vec a[2];
+	a[0] = 1;
+	a[1] = 2;
+	a[1][1] = 0;
+	cout<<a[0]<<endl<<a[1]<<endl;
 	return 0;
 }
